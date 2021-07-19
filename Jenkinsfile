@@ -1,5 +1,5 @@
 pipeline {
-  agente {
+  agent {
     dockeer {
       image "node:8-alpine"
     }
