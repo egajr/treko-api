@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    dockeer {
+    docker {
       image "node:8-alpine"
     }
   }
