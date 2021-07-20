@@ -24,7 +24,8 @@ pipeline {
       }
       post {
         always {
-          junit "**/log/*.xml"
+          sh "ln -s log/*.xml $WORKSPACE"
+          junit "log/*.xml"
         }
       }
     }
